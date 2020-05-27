@@ -1,6 +1,9 @@
-
 from cx_Freeze import setup, Executable
+import sys
 
+
+
+sys.argv.append("build")
 base = None    
 
 executables = [Executable("sankey.py", base=base)]
@@ -19,4 +22,3 @@ setup(
     description = '',
     executables = executables
 )
-
